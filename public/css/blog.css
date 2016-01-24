@@ -1,0 +1,223 @@
+body{
+	font-family: 'Crimson Text', serif;	
+	font-size: 15px;
+	margin:0;
+	background-color: black;
+	color: white;
+}
+a{
+	text-decoration: none;
+}
+
+.blog-container{
+	padding-top: 9em;
+	margin-left: 17.5%;
+	margin-right: 17.5%;
+	width: 65%;
+	padding-bottom: 8em;
+	overflow-x: hidden;
+}
+.blog-post{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.blog-post a{
+	color: white;
+	opacity: .8;
+	-webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.blog-post a:hover{
+	opacity: 1;
+}
+.blog-title{
+	font-size: 1.8em;
+	margin: 0em;
+	margin-bottom: .2em;
+}
+.hidden{
+	display: none;
+}
+
+.blog-image-container{
+	width: 100%;
+	text-align: center;
+}
+.blog-image{
+	margin: 1em;
+	width: 60%;
+}
+.date{
+	text-align: center;
+	color: #FAE4B6;
+}
+.stream{
+	z-index: 10;
+	position: fixed;
+	height: 100%;
+	width:  50em;
+	overflow: none;
+	background-color: black;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.stream h1{
+	margin-top: 5em;
+	color: white;
+}
+.bar{
+	margin-left: 3px;
+	height: .7em;
+	width: .25em;
+	background-color: white;
+	display: inline-block;
+	-webkit-animation: twinkly 1s alternate infinite;
+    -moz-animation: twinkly 1s alternate infinite;
+    -ms-animation: twinkly 1s alternate infinite;
+}
+.blinker{
+	-webkit-animation: twinkly .6s alternate infinite;
+    -moz-animation: twinkly .6s alternate infinite;
+    -ms-animation: twinkly .6s alternate infinite;
+}
+@-webkit-keyframes twinkly {
+    0%   { opacity: 0; }
+    30%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+.navigation{
+	background-color: black;
+	position: fixed;
+/*	padding-left: 18%;
+*/	/*padding-right: 18%;*/
+	border-bottom: 3px #413F3A solid;
+	box-shadow: 0 10px 5px -5px black;
+	width: 100%;
+	display: table-cell;
+    vertical-align: bottom;
+	/*padding-top: 40%;*/
+	height:100%;
+	z-index: 10;
+	text-align: bottom;
+}
+.navigation-text{
+	position: absolute;
+	bottom:20%;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+.navigation h3{
+	/*position: absolute;*/
+	/*bottom: 1em;*/
+	margin-bottom: .3em;
+
+	line-height: 1.7em;
+}
+.topic{
+	cursor: pointer;
+}
+.topic:hover{
+	color: #FAE4B6;
+}
+.filter{
+	color: #FAE4B6;
+	border-bottom: 3px solid rgba(250,228,182, 1);
+}
+@media all and (max-device-width: 400px){
+	body{
+		font-size: 50px;
+	}
+	.blog-container{
+	width:17em;
+	}
+}
+.info{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	bottom: 0%;
+	/*border-top: 2px #413F3A solid;*/
+}
+.info-back{
+	background-color: black;
+}
+.info a{
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: .3em;
+	margin-bottom: .3em;
+}
+
+.glyph{
+	height: 1.5em;
+	width:1.5em;
+	display:inline-block;	
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.home{
+ 	background: url('/static/glyphs/home.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.home:hover{
+	opacity: 0;
+}
+.home-tan{
+ 	background: url('/static/glyphs/home_hover.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.mail{
+ 	background: url('/static/glyphs/mail.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+ }
+.mail:hover{
+	opacity: 0;
+}
+.twitterbird {
+ 	background: url('/static/glyphs/twitter.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.twitterbird:hover{
+	opacity: 0;
+}
+.github {
+ 	background: url('/static/glyphs/github.png') center center no-repeat;
+ 	background-size: 1.45em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.github:hover{
+	opacity: 0;
+}
+.mail-tan {
+ 	background: url('/static/glyphs/mail_hover.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+ }
+.twitterbird-tan {
+ 	background: url('/static/glyphs/twitter_hover.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.github-tan {
+ 	background: url('/static/glyphs/github_hover.png') center center no-repeat;
+ 	background-size: 1.45em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+
+
+

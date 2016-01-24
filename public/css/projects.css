@@ -1,0 +1,216 @@
+body{
+	font-family: 'Dosis', sans-serif;
+	margin: 0;
+	padding:0;
+	font-size: 18px;
+	color:white;
+	-webkit-transition: background-color .5s; 
+    transition: background-color .5s;
+}
+.quote-container{
+	width: 20em;
+	position: absolute;
+	margin: 0 auto;
+	top: 35%;
+	left:0;
+	right:0;
+}
+svg{
+	z-index: 1;
+	position: absolute;
+/*	margin: 0 auto;
+	left: 0;
+	right: 0;*/
+}
+polygon{
+	-webkit-transition: fill .5s; 
+    transition: fill .5s;
+}
+.bottom{
+	bottom:0;
+}
+.bottom-poly{
+	bottom:0;
+}
+.right{
+	right:0;
+}
+.right-poly, .left-poly{
+	cursor:pointer;
+}
+.top-hover{
+	position: absolute;
+	z-index: 5;
+	height: 45%;
+	top:0;
+	left: 20%;
+	width: 60%;
+}
+.menu{
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	-webkit-user-select: none;     
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	text-align: bottom;
+}
+.menu p{
+	font-size: 1.5em;
+	display: inline-block;
+	margin: 1em;
+	margin-top: 0;
+	margin-bottom: .1em;
+}
+.fit{
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+}
+.half{
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: red;
+	z-index: 1000;
+	left: 50%;
+}
+.fittobox {     
+    display: inline-block; /* let it be styled thusly */
+    padding: 0;            /* get rid of pre-styling */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;           /* take up full width available */
+    padding-top: 56.25%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px;           /* don't want it to expand beyond padding */
+    position: relative;    /* allow for absolute positioning of child elements */
+}
+.fittobox > iframe {
+    position: absolute;    /* expand to fill */
+    top: 0px;
+    left: -1px;
+    right: -1px;
+    bottom: 0px;
+    width:100%;
+    height: 100%
+}
+.stream{
+	z-index: 10;
+	position: fixed;
+	height: 100%;
+	width:  100%;
+	background-color: black;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.stream h1{
+	margin-top: 5em;
+	color: white;
+}
+.blinker{
+	-webkit-animation: twinkly .6s alternate infinite;
+    -moz-animation: twinkly .6s alternate infinite;
+    -ms-animation: twinkly .6s alternate infinite;
+}
+@-webkit-keyframes twinkly {
+    0%   { opacity: 0; }
+    30%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+#cover-video{
+	z-index: 5;
+	position: absolute;
+	 display: inline-block; /* let it be styled thusly */
+    padding: 0;            /* get rid of pre-styling */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;           /* take up full width available */
+    padding-top: 56.25%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px; 
+}
+#cover-video:hover{
+	cursor:pointer;
+}
+
+@media all and (max-device-width: 400px){
+	body{
+		font-size: 40px;
+	}
+}
+.info{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	bottom: 0%;
+	z-index: 2;
+}
+.info a{
+	margin: 1em;
+	cursor: pointer;
+}
+.glyph{
+	height: 1.5em;
+	width:1.6em;
+	display:inline-block;	
+	opacity: .2;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+/*.glyph:hover{
+	opacity:.5;
+}*/
+.home {
+ 	background: url('/static/glyphs/home.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.mail {
+ 	background: url('/static/glyphs/mail.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+ }
+.twitterbird {
+ 	background: url('/static/glyphs/twitter.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	opacity: .2;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.github {
+ 	background: url('/static/glyphs/github.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.mail-tan {
+ 	background: url('/static/glyphs/mail_hover.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+ }
+.twitterbird-tan {
+ 	background: url('/static/glyphs/twitter_hover.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.github-tan {
+ 	background: url('/static/glyphs/github_hover.png') center center no-repeat;
+ 	background-size: 1.5em;
+ 	-webkit-transition: opacity .5s; 
+    transition: opacity .5s;
+}
+.hidden{
+	display: none;
+}
+

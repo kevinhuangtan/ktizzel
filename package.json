@@ -1,0 +1,11 @@
+{
+  "name": "ktizzel",
+  "version": "1.0.0",
+  "description": "My Own Website for Music, Code, and Ideas. 0_0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
