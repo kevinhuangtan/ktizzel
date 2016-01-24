@@ -1,5 +1,5 @@
 body{
-	font-family: 'Crimson Text', serif;	
+	font-family: 'Crimson Text', serif;
 	font-size: 15px;
 	margin:0;
 	background-color: #111110;
@@ -16,7 +16,7 @@ h1{
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	background-image: url('/static/images/cover_image_4.jpg');
+	background-image: url('/images/cover_image_4.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -37,7 +37,7 @@ h1{
 	left:12%;
 
 	width: 350px;
-	height: 3em;	
+	height: 3em;
 }
 .quote{
 	font-size: 19px;
@@ -53,7 +53,7 @@ h1{
 }
 #loading-text:hover{
 	opacity: 1;
-	
+
 }
 /*#slider{
 	width:10px;
@@ -224,4 +224,3 @@ iframe{
 #resume:hover{
 	opacity:1;
 }
-

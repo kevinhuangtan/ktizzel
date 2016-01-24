@@ -1,5 +1,5 @@
 body{
-	font-family: 'Crimson Text', serif;	
+	font-family: 'Crimson Text', serif;
 	font-size: 15px;
 	margin:0;
 	background-color: black;
@@ -154,70 +154,67 @@ a{
 .glyph{
 	height: 1.5em;
 	width:1.5em;
-	display:inline-block;	
- 	-webkit-transition: opacity .5s; 
+	display:inline-block;
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .home{
- 	background: url('/static/glyphs/home.png') center center no-repeat;
+ 	background: url('/glyphs/home.png') center center no-repeat;
  	background-size: 1.5em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .home:hover{
 	opacity: 0;
 }
 .home-tan{
- 	background: url('/static/glyphs/home_hover.png') center center no-repeat;
+ 	background: url('/glyphs/home_hover.png') center center no-repeat;
  	background-size: 1.5em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .mail{
- 	background: url('/static/glyphs/mail.png') center center no-repeat;
+ 	background: url('/glyphs/mail.png') center center no-repeat;
  	background-size: 1.5em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
  }
 .mail:hover{
 	opacity: 0;
 }
 .twitterbird {
- 	background: url('/static/glyphs/twitter.png') center center no-repeat;
+ 	background: url('/glyphs/twitter.png') center center no-repeat;
  	background-size: 1.5em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .twitterbird:hover{
 	opacity: 0;
 }
 .github {
- 	background: url('/static/glyphs/github.png') center center no-repeat;
+ 	background: url('/glyphs/github.png') center center no-repeat;
  	background-size: 1.45em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .github:hover{
 	opacity: 0;
 }
 .mail-tan {
- 	background: url('/static/glyphs/mail_hover.png') center center no-repeat;
+ 	background: url('/glyphs/mail_hover.png') center center no-repeat;
  	background-size: 1.5em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
  }
 .twitterbird-tan {
- 	background: url('/static/glyphs/twitter_hover.png') center center no-repeat;
+ 	background: url('/glyphs/twitter_hover.png') center center no-repeat;
  	background-size: 1.5em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
 .github-tan {
- 	background: url('/static/glyphs/github_hover.png') center center no-repeat;
+ 	background: url('/glyphs/github_hover.png') center center no-repeat;
  	background-size: 1.45em;
- 	-webkit-transition: opacity .5s; 
+ 	-webkit-transition: opacity .5s;
     transition: opacity .5s;
 }
-
-
-
