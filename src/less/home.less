@@ -1,0 +1,385 @@
+body{
+  // background-color: rgb(253, 251, 248);
+  font-family: 'Merriweather Sans', sans-serif!important;
+  margin: 0;
+  background-color: rgb(242, 242, 242);
+
+  padding: 0;
+}
+a{
+  .transition;
+}
+a:hover{
+  opacity: .8;
+}
+.footer{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+  top: 100%;
+  p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    opacity: .3;
+    letter-spacing: 1.8px;
+    display: inline-block;
+  }
+  img{
+    width: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .right{
+    float: right;
+    letter-spacing: 0;
+    span{
+      margin-right: 10px;
+    }
+  }
+}
+.Container{
+  background-color: rgb(253, 251, 248);
+
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  // section{
+  //   flex: 1;
+  // }
+}
+.Navigation-container{
+  // background-color: red;
+  flex:2;
+  display: flex;
+  justify-content: flex-start;
+  // align-items: center;
+  padding-top: 200px;
+  .Navigation{
+    text-align: right;
+    width: 350px;
+    // padding-top: 200px;
+    // padding-left: 10%;
+    .title{
+      opacity: .5;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-weight: normal;
+      margin-top: 10px;
+      cursor: pointer;
+      .good-life{
+        letter-spacing: 4px;
+      }
+      margin-bottom: 80px;
+      .transition;
+    }
+    .title:hover{
+      opacity: .8
+    }
+    .nav{
+      margin-top: 0px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      .transition;
+      // span{
+        opacity: .5;
+        // .transition;
+      // }
+      // span:hover{
+      //   opacity: .8;
+      // // }
+    }
+    .nav:hover{
+      opacity: .7;
+    }
+    .nav1:hover{
+      color: rgb(144, 67, 127);
+    }
+    .nav2:hover{
+
+      color: rgb(190, 73, 62);
+    }
+    .nav3:hover{
+      color: rgba(227, 137, 71, 1);
+    }
+    .nav4:hover{
+      color: rgb(84, 147, 37);
+
+    }
+    .nav5:hover{
+      color: rgb(204, 67, 67);
+    }
+    .nav6:hover{
+      color: rgb(82, 125, 198);
+    }
+    .nav7:hover{
+      color: rgb(135, 79, 39);
+    }
+  }
+
+}
+.Content{
+  flex:3;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.css-transition{
+  flex:1;
+}
+.Slide{
+  position: absolute;
+  width: 100%;
+  top:0;
+  // left:0;
+  // background-color: red;
+  height: 100%;
+  display: flex;
+  // display: flex;
+  // flex:1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p{
+    width: 400px;
+    opacity: .6;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+  }
+  // position: fixed;
+  overflow: hidden;
+}
+.Slide0{
+  img{
+    width: 300px;
+    margin-right: 40px;
+  }
+
+}
+.Slide1{
+  // background-color: red;
+  .logo-container{
+    // background-color: yellow;
+    height: 300px;
+    overflow: hidden;
+    width: 400px;
+    img{
+      width: 700px;
+      transform: translateX(-150px);
+    }
+    margin-bottom: 30px;
+  }
+  .last{
+    margin-bottom: 50px;
+  }
+}
+.Slide2{
+}
+.Slide3{
+  .img-container{
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 2px;
+    img{
+      width: 400px;
+    }
+  }
+
+}
+.Slide4{
+  p{
+    margin-bottom: 40px;
+    width: 420px;
+  }
+  .content-parent{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  iframe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    inset:0;
+    border: 0;
+  }
+}
+.Slide5{
+  .content-parent{
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+  }
+  p{
+    // font-size: 12px;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  hr{
+    opacity: .3;
+    text-align: left;
+  }
+
+}
+
+.Slide6{
+  .content-parent{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+  }
+  .project{
+    margin: 0 auto;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+    overflow: hidden;
+    background-color: rgba(0,0,0,.02);
+    margin-bottom: 40px;
+  }
+  img{
+    width: 100%;
+  }
+  .text{
+    padding: 20px;
+    p{
+      width: auto;
+    }
+  }
+}
+.Slide7{
+  p{
+    width: 100%;
+    margin-right: 0;
+  }
+  h1{
+    margin-bottom: 5px;
+    letter-spacing: 1;
+  }
+  .blog-post{
+    width: 85%;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(0,0,0,.1);
+  }
+  .date{
+    font-size: 18px;
+    // font-family: 'Helvetica';
+    margin: 0;
+    margin-top: 5px;
+  }
+  .content-parent{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+  h1{
+    opacity: .7;
+  }
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+////////////////////////
+.example-enter { //new thing added
+  // opacity: 0.01;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+
+}
+
+.example-enter.example-enter-active {
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s, opacity 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s;
+  transition: transform 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s, opacity 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s;
+
+}
+
+.example-appear { //appears at the beginning
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+
+}
+
+.example-appear.example-appear-active {
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s, opacity 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s;
+  transition: transform 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s, opacity 0.6s cubic-bezier(0.6, 0.5, 0.4, 1) 0.2s;
+
+}
+
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 100ms ease-in;
+}
+
+.transition {
+  -webkit-transition: all 100ms ease;
+  -moz-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+.transition-slow {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.hidden{
+  display: none;
+}
+// <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4"
+// style={{background:"#FFF", border:0, borderRadius:"3px", boxShadow:"0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)", margin: "1px", maxWidth:"658px", padding:0; width:"99.375%", width: "-webkit-calc(100% - 2px)", width:"calc(100% - 2px)"}}>
+// <div style={{padding:"8px"}}> <div
+// style=" {{background:"#F8F8F8", lineHeight:0, marginTop:"40px", padding:"50% 0", textAlign:"center", width:"100%"}}> <div
+// style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
+// </div> <p style=" {{margin:"8px 0 0 0", padding:"0 4px"> <a href="https://instagram.com/p/6QaJ5amJ5P/"
+// style={{color:"#000"; fontFamily:"Arial,sans-serif", fontSize:"14px", fontStyle:"normal", fontWeight:"normal", lineHeight:"17px", textDecoration:"none", wordWrap:"break-word"}} target="_top">The Women’s Table at night with Sterling Memorial Library in the background. Designed by Maya Lin, commissioned in 1989 and installed in 1993. #Yale #inspiringYale</a></p>
+// <p style=" {{color:"#c9c8cd", fontFamily:"Arial,sans-serif", fontSize:"14px", lineHeight:"17px", marginBottom:0, marginTop:"8px", overflow:"hidden", padding:"8px 0 7px", textAlign:"center", textVverflow:"ellipsis", whiteSpace:"nowrap"}}>A photo posted by Yale (@yale) on
+// <time style=" {{fontFamily:"Arial,sans-serif", fontSize:"14px", lineHeight:"17px", datetime="2015-08-11T20:24:16+00:00">Aug 11, 2015 at 1:24pm PDT</time></p></div></blockquote>

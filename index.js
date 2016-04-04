@@ -15,6 +15,13 @@ app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
+var livereload = require('livereload');
+var reloadServer = livereload.createServer();
+reloadServer.watch([__dirname + "/public/css", __dirname + "/public/js", __dirname + "/views"]);
+
+global.__lib = __dirname + '/public/';
+// require(__lib + 'init.js')(); // External Dependencies (Parse, Mailgiun, password)
+
 
 ////////////////////////////////////////////////
 ///////////////*~ Basic Routes ~*///////////////
@@ -22,12 +29,13 @@ app.set('view engine', 'ejs');
 
 app.get('/', function (req, res)
 {
-  res.render('home.html');
+  res.render('homev2.html');
 })
 
 app.get('/resume', function (req, res)
 {
-  res.send_file('static/cv.pdf');
+  console.log(global.__lib)
+  res.sendFile(global.__lib + '/cv.pdf');
 })
 
 
