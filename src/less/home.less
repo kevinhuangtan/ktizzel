@@ -12,6 +12,9 @@ a{
 a:hover{
   opacity: .8;
 }
+
+
+
 .footer{
   position: absolute;
   height: 50px;
@@ -132,6 +135,11 @@ a:hover{
   align-items: center;
 
 }
+.content-parent{
+  width: 90%;
+  height: 100%;
+  overflow: scroll;
+}
 
 .css-transition{
   flex:1;
@@ -182,10 +190,17 @@ a:hover{
   .last{
     margin-bottom: 50px;
   }
+  .content-parent{
+
+    .flex-center
+  }
 }
 .Slide2{
 }
 .Slide3{
+  .content-parent{
+    .flex-center;
+  }
   .img-container{
     width: 400px;
     height: 250px;
@@ -207,9 +222,7 @@ a:hover{
     padding-top: 200px;
     padding-bottom: 200px;
 
-    width: 90%;
-    height: 100%;
-    overflow: scroll;
+
   }
 
   iframe{
@@ -223,10 +236,6 @@ a:hover{
   .content-parent{
     padding-top: 200px;
     padding-bottom: 200px;
-
-    width: 90%;
-    height: 100%;
-    overflow: scroll;
   }
   p{
     // font-size: 12px;
@@ -249,9 +258,7 @@ a:hover{
   .content-parent{
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 90%;
-    height: 100%;
-    overflow: scroll;
+
   }
   .project{
     margin: 0 auto;
@@ -296,12 +303,7 @@ a:hover{
   .content-parent{
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 90%;
-    height: 100%;
-    overflow: scroll;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+
   }
   h1{
     opacity: .7;
@@ -358,6 +360,12 @@ a:hover{
   opacity: 0.01;
   transition: opacity 100ms ease-in;
 }
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .transition {
   -webkit-transition: all 100ms ease;
@@ -374,6 +382,8 @@ a:hover{
 .hidden{
   display: none;
 }
+
+@import "home--mobile";
 // <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4"
 // style={{background:"#FFF", border:0, borderRadius:"3px", boxShadow:"0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)", margin: "1px", maxWidth:"658px", padding:0; width:"99.375%", width: "-webkit-calc(100% - 2px)", width:"calc(100% - 2px)"}}>
 // <div style={{padding:"8px"}}> <div

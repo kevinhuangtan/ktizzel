@@ -20,6 +20,9 @@ gulp.task('js', function(){
       .bundle()
       .pipe(source('home.js'))
       .pipe(buffer())
+      .pipe(uglify().on('error', function(e){
+          console.log(e);
+       }))
       .pipe(gulp.dest('public/js/build/'));
 });
 

@@ -70,6 +70,8 @@ var Slide3 = React.createClass({
   render:function(){
       return (
         <div key={3} className="Slide3 Slide">
+          <div className="content-parent">
+
           <p>B.S in Physics, Yale University Class of 2016</p>
           <p>Senior Research: Contributor to <a href="https://github.com/astropy/halotools">Halotools</a>, an official package in the <a href="http://www.astropy.org/">Astropy</a> project.</p>
           <p>I built a set of data structures and data mining methods for modeling the assembly histories of dark matter halos.</p>
@@ -78,6 +80,7 @@ var Slide3 = React.createClass({
           <div className="img-container">
           <img src="/images/halo-project.png"/>
           </div>
+        </div>
         </div>
       )
   }
@@ -99,12 +102,15 @@ var Slide1 = React.createClass({
   render:function(){
       return (
         <div key={1} className="Slide1 Slide">
+          <div className="content-parent">
+
           <div className="logo-container">
             <img src="/images/theo_animated.gif"/>
           </div>
           <p>Founder and CEO of <a target="_blank" href="https://theo.clothing">Theo</a>, a product platform for independent fashion and streetwear designers.</p>
           <p>Currently featuring 20 designers, including <a target="_blank" href="https://theo.clothing/controlsector">Control Sector</a>.</p>
           <p className="last">Web app built with Node.js, React and Parse. Mobile app built with React Native.</p>
+          </div>
         </div>
       )
   }
@@ -231,7 +237,6 @@ ReactDOM.render(
     <div className="footer">
       <p>© Kevin Tan, 1993- future</p>
       <p className="right">
-        <a href="http://github.com/kevinhuangtan"><img id="github" src="/glyphs/github.png" /></a>
         kevin@ktizzel.com
   			<a id="resume" target="_blank" href="/resume">resume</a>
 			</p>
