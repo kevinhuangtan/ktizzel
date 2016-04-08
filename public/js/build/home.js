@@ -43816,8 +43816,8 @@ var Slide4 = React.createClass({displayName: "Slide4",
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221710618&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"}), 
             React.createElement("iframe", {width: "100%", height: "315", src: "https://www.youtube.com/embed/tmb96MeNYKI?rel=0", frameBorder: "0", allowFullScreen: true}), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202083877&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"}), 
-            React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameborder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195399134&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"}), 
-            React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameborder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189292080&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"}), 
+            React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195399134&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"}), 
+            React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189292080&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"}), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201308012&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"}), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197024405&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"}), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196895658&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"}), 
@@ -43947,7 +43947,8 @@ var Navigation = React.createClass({displayName: "Navigation",
         slide4 : {},
         slide5 : {},
         slide6 : {},
-        slide7 : {}
+        slide7 : {},
+        slide8 : {}
       }
       if(this.props.slide || this.props.slide == 0){
         var slide = "slide" + (this.props.slide.toString());
@@ -43967,8 +43968,8 @@ var Navigation = React.createClass({displayName: "Navigation",
             React.createElement("p", {className: "nav nav4", style: styles.slide4}, React.createElement("span", {onClick: function(){return this.props._setSlide(4);}.bind(this)}, "music production")), 
             React.createElement("p", {className: "nav nav5", style: styles.slide5}, React.createElement("span", {onClick: function(){return this.props._setSlide(5);}.bind(this)}, "photography")), 
             React.createElement("p", {className: "nav nav6", style: styles.slide6}, React.createElement("span", {onClick: function(){return this.props._setSlide(6);}.bind(this)}, "influences")), 
-            React.createElement("p", {className: "nav nav6", style: styles.slide7}, React.createElement("span", {onClick: function(){return this.props._setSlide(7);}.bind(this)}, "projects")), 
-            React.createElement("p", {className: "nav nav7", style: styles.slide8}, React.createElement("span", {onClick: function(){return this.props._setSlide(8);}.bind(this)}, "blog"))
+            React.createElement("p", {className: "nav nav7", style: styles.slide7}, React.createElement("span", {onClick: function(){return this.props._setSlide(7);}.bind(this)}, "projects")), 
+            React.createElement("p", {className: "nav nav8", style: styles.slide8}, React.createElement("span", {onClick: function(){return this.props._setSlide(8);}.bind(this)}, "blog"))
 
           )
         )
@@ -44304,7 +44305,7 @@ var Projects = React.createClass({displayName: "Projects",
         ), 
         React.createElement("div", {className: "project"}, 
           React.createElement("div", {className: "text"}, 
-            React.createElement("p", null, "Virtual Reality Recreation of Multiple Japanese Byobu Scenes")
+            React.createElement("p", null, "Virtual Reality Recreation of Multiple Japanese Byobu Scenes in Unreal Engine")
           )
         ), 
         React.createElement("div", {className: "project"}, 
@@ -44328,6 +44329,13 @@ var Projects = React.createClass({displayName: "Projects",
           )
         ), 
         React.createElement("div", {className: "project"}, 
+          React.createElement("div", {className: "text"}, 
+            React.createElement("p", null, "Fellow at Yale Center for Engineering and Design"), 
+            React.createElement("p", null, "Virtual Reality application for architecture visualization built with Kinect, Oculus Rift and Unreal Engine")
+          )
+        ), 
+
+        React.createElement("div", {className: "project"}, 
           React.createElement("img", {src: "/images/annelisa-project.png"}), 
           React.createElement("div", {className: "text"}, 
             React.createElement("p", null, "Designed and Built Web Portfolio for Artist Annelisa Leinbach"), 
@@ -44345,14 +44353,8 @@ var Projects = React.createClass({displayName: "Projects",
             React.createElement("p", null, "Sticktionary"), 
             React.createElement("p", null, "Mobile app built with React Native for language learning startup.")
           )
-        ), 
-
-        React.createElement("div", {className: "project"}, 
-          React.createElement("div", {className: "text"}, 
-            React.createElement("p", null, "Fellow at Center for Engineering and Design"), 
-            React.createElement("p", null, "Virtual Reality application for architecture visualization")
-          )
         )
+
 
 
       )

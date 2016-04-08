@@ -55,7 +55,7 @@ a:hover{
   position: absolute;
   left:0;
   right:0;
-  align-self: center;
+  // align-self: center;
 
   // section{
   //   flex: 1;
@@ -93,14 +93,21 @@ a:hover{
       width: 400px!important;
     }
   }
+  .Slide0{
+    img{
+      margin-right: 0!important;
+    }
+    padding-top: 0!important;
+    justify-content: center!important;
+  }
 }
 
 .Navigation-container{
-  flex:1;
+  // flex:1;
   display: flex;
-  // justify-content: flex-start;
   justify-content: center;
   padding-top: 200px;
+  padding-right: 0px;
   .Navigation{
     text-align: right;
     width: 350px;
@@ -152,9 +159,12 @@ a:hover{
       color: rgb(204, 67, 67);
     }
     .nav6:hover{
-      color: rgb(82, 125, 198);
+      color: rgba(93, 93, 93,.6);
     }
     .nav7:hover{
+      color: rgb(82, 125, 198);
+    }
+    .nav8:hover{
       color: rgb(135, 79, 39);
     }
   }
@@ -182,12 +192,8 @@ a:hover{
   position: absolute;
   width: 100%;
   top:0;
-  // left:0;
-  // background-color: red;
   height: 100%;
   display: flex;
-  // display: flex;
-  // flex:1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -198,14 +204,12 @@ a:hover{
     margin-top: 10px;
 
   }
-  // position: fixed;
   overflow: hidden;
 }
 .Slide0{
   justify-content: flex-start;
-  padding-top: 200px;
   img{
-    margin-top: 10px;
+    margin-top: 200px;
     width: 300px;
     margin-right: 40px;
   }

@@ -57,8 +57,8 @@ var Slide4 = React.createClass({
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221710618&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/tmb96MeNYKI?rel=0" frameBorder="0" allowFullScreen></iframe>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202083877&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195399134&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189292080&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195399134&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189292080&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201308012&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197024405&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196895658&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
@@ -188,7 +188,8 @@ var Navigation = React.createClass({
         slide4 : {},
         slide5 : {},
         slide6 : {},
-        slide7 : {}
+        slide7 : {},
+        slide8 : {}
       }
       if(this.props.slide || this.props.slide == 0){
         var slide = "slide" + (this.props.slide.toString());
@@ -208,8 +209,8 @@ var Navigation = React.createClass({
             <p className="nav nav4" style={styles.slide4}><span onClick={()=>this.props._setSlide(4)}>music production</span></p>
             <p className="nav nav5" style={styles.slide5}><span onClick={()=>this.props._setSlide(5)}>photography</span></p>
             <p className="nav nav6" style={styles.slide6}><span onClick={()=>this.props._setSlide(6)}>influences</span></p>
-            <p className="nav nav6" style={styles.slide7}><span onClick={()=>this.props._setSlide(7)}>projects</span></p>
-            <p className="nav nav7" style={styles.slide8}><span onClick={()=>this.props._setSlide(8)}>blog</span></p>
+            <p className="nav nav7" style={styles.slide7}><span onClick={()=>this.props._setSlide(7)}>projects</span></p>
+            <p className="nav nav8" style={styles.slide8}><span onClick={()=>this.props._setSlide(8)}>blog</span></p>
 
           </div>
         </section>

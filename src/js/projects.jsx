@@ -16,7 +16,7 @@ var Projects = React.createClass({
         </div>
         <div className="project">
           <div className="text">
-            <p>Virtual Reality Recreation of Multiple Japanese Byobu Scenes</p>
+            <p>Virtual Reality Recreation of Multiple Japanese Byobu Scenes in Unreal Engine</p>
           </div>
         </div>
         <div className="project">
@@ -40,6 +40,13 @@ var Projects = React.createClass({
           </div>
         </div>
         <div className="project">
+          <div className="text">
+            <p>Fellow at Yale Center for Engineering and Design</p>
+            <p>Virtual Reality application for architecture visualization built with Kinect, Oculus Rift and Unreal Engine</p>
+          </div>
+        </div>
+
+        <div className="project">
           <img src="/images/annelisa-project.png"/>
           <div className="text">
             <p>Designed and Built Web Portfolio for Artist Annelisa Leinbach</p>
@@ -59,12 +66,6 @@ var Projects = React.createClass({
           </div>
         </div>
 
-        <div className="project">
-          <div className="text">
-            <p>Fellow at Center for Engineering and Design</p>
-            <p>Virtual Reality application for architecture visualization</p>
-          </div>
-        </div>
 
 
       </div>
