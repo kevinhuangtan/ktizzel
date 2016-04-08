@@ -7,8 +7,9 @@ var ReactDOM = require('react-dom');
 var $ = require('jquery');
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
-var Slide7 = require('./slide7.jsx');
-var Slide6 = require('./slide6.jsx');
+var Slide8 = require('./blog.jsx');
+var Slide7 = require('./projects.jsx');
+var Slide6 = require('./influences.jsx');
 
 
 var Slide5 = React.createClass({
@@ -17,7 +18,7 @@ var Slide5 = React.createClass({
   },
   render:function(){
       return (
-        <div key={5} className="Slide5 Slide">
+        <div key={5} className="Photography Slide">
           <div className="content-parent">
             <img src="/images/newhaven.png"/>
             <p>New Haven Summit</p>
@@ -43,23 +44,25 @@ var Slide5 = React.createClass({
       )
   }
 })
-// <iframe width="100%" height="315" src="https://www.youtube.com/embed/FJ_x5MLc-jI?rel=0" frameborder="0" allowfullscreen></iframe>
+// <iframe width="100%" height="315" src="https://www.youtube.com/embed/FJ_x5MLc-jI?rel=0" frameBorder="0" allowFullScreen></iframe>
 
 var Slide4 = React.createClass({
   render:function(){
       return (
-        <div key={4} className="Slide4 Slide">
+        <div key={4} className="Music Slide">
           <div className="content-parent">
             <p>keys. drums. guitar. bass. ableton. logic. vocals. rap. asian soul.</p>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839129&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839352&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221710618&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tmb96MeNYKI?rel=0" frameborder="0" allowfullscreen></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202083877&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201308012&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197024405&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196895658&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191140081&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839129&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839352&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221710618&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tmb96MeNYKI?rel=0" frameBorder="0" allowFullScreen></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202083877&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195399134&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189292080&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201308012&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197024405&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196895658&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191140081&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
           </div>
         </div>
       )
@@ -69,16 +72,16 @@ var Slide4 = React.createClass({
 var Slide3 = React.createClass({
   render:function(){
       return (
-        <div key={3} className="Slide3 Slide">
+        <div key={3} className="YalePhysics Slide">
           <div className="content-parent">
 
-          <p>B.S in Physics, Yale University Class of 2016</p>
-          <p>Senior Research: Contributor to <a href="https://github.com/astropy/halotools">Halotools</a>, an official package in the <a href="http://www.astropy.org/">Astropy</a> project.</p>
-          <p>I built a set of data structures and data mining methods for modeling the assembly histories of dark matter halos.</p>
-          <p>Built using Python, Cython, Numpy and HDF5</p>
-          <p>Advisor: Andrew Hearin, Yale Department of Physics</p>
-          <div className="img-container">
-          <img src="/images/halo-project.png"/>
+            <p>B.S in Physics, Yale University Class of 2016</p>
+            <p>Senior Research: Contributor to <a href="https://github.com/astropy/halotools">Halotools</a>, an official package in the <a href="http://www.astropy.org/">Astropy</a> project.</p>
+            <p>I built a set of data structures and data mining methods for modeling the assembly histories of dark matter halos.</p>
+            <p>Built using Python, Cython, Numpy and HDF5</p>
+            <p>Advisor: Andrew Hearin, Yale Department of Physics</p>
+            <div className="img-container">
+            <img src="/images/halo-project.png"/>
           </div>
         </div>
         </div>
@@ -89,7 +92,7 @@ var Slide3 = React.createClass({
 var Slide2 = React.createClass({
   render:function(){
       return (
-        <div key={2} className="Slide2 Slide">
+        <div key={2} className="Developer Slide">
           <p><strong>Languages:</strong> Python, Cython, Javascript, C, Matlab, Objective C, HTML, CSS, LESS</p>
           <p><strong>Frameworks and libraries:</strong> Node.js, React, React Native, Flask, Meteor, MongoDB</p>
           <p><strong>Skills:</strong> Web, UI/UX, iOS & Android, Fullstack Developer, Data Structures and Algorithms</p>
@@ -101,7 +104,7 @@ var Slide2 = React.createClass({
 var Slide1 = React.createClass({
   render:function(){
       return (
-        <div key={1} className="Slide1 Slide">
+        <div key={1} className="Theo Slide">
           <div className="content-parent">
 
           <div className="logo-container">
@@ -146,6 +149,9 @@ var Content = React.createClass({
     if(this.props.slide == 7){
         Body =  <Slide7 key={7} />
     }
+    if(this.props.slide == 8){
+        Body =  <Slide8 key={8} />
+    }
 
 
     return (
@@ -167,6 +173,7 @@ var Navigation = React.createClass({
         "rgba(227, 137, 71, 1)",
         "rgb(84, 147, 37)",
         "rgb(204, 67, 67)",
+        "rgb(93, 93, 93)",
         "rgb(82, 125, 198)",
         "rgb(135, 79, 39)"
       ]
@@ -194,14 +201,15 @@ var Navigation = React.createClass({
       return (
         <section className="Navigation-container">
           <div className="Navigation">
-            <p className="title" style={styles.slide0} onClick={()=>this.props._setSlide(0)}>I strive to make products that enhance <span className="good-life">the good life</span></p>
+            <p className="title" style={styles.slide0} onClick={()=>this.props._setSlide(0)}>I strive to make products that add to <span className="good-life">the good life</span></p>
             <p className="nav nav1" style={styles.slide1} ><span onClick={()=>this.props._setSlide(1)}>founder of theo.clothing</span></p>
             <p className="nav nav2" style={styles.slide2}><span  onClick={()=>this.props._setSlide(2)}>web and iOS developer</span></p>
             <p className="nav nav3" style={styles.slide3}><span onClick={()=>this.props._setSlide(3)}>physics major at Yale</span></p>
             <p className="nav nav4" style={styles.slide4}><span onClick={()=>this.props._setSlide(4)}>music production</span></p>
             <p className="nav nav5" style={styles.slide5}><span onClick={()=>this.props._setSlide(5)}>photography</span></p>
-            <p className="nav nav6" style={styles.slide6}><span onClick={()=>this.props._setSlide(6)}>projects</span></p>
-            <p className="nav nav7" style={styles.slide7}><span onClick={()=>this.props._setSlide(7)}>blog</span></p>
+            <p className="nav nav6" style={styles.slide6}><span onClick={()=>this.props._setSlide(6)}>influences</span></p>
+            <p className="nav nav6" style={styles.slide7}><span onClick={()=>this.props._setSlide(7)}>projects</span></p>
+            <p className="nav nav7" style={styles.slide8}><span onClick={()=>this.props._setSlide(8)}>blog</span></p>
 
           </div>
         </section>
