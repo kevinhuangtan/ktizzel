@@ -2,8 +2,8 @@ body{
   // background-color: rgb(253, 251, 248);
   font-family: 'Merriweather Sans', sans-serif!important;
   margin: 0;
-  background-color: rgb(242, 242, 242);
-
+  background-color: rgb(253, 252, 249);
+  // display: flex;
   padding: 0;
 }
 a{
@@ -43,31 +43,70 @@ a:hover{
   }
 }
 .Container{
-  background-color: rgb(253, 251, 248);
+  background-color: rgb(253, 252, 249);
 
-
+  // background-color: red;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 1200px;
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  position: absolute;
+  left:0;
+  right:0;
+  align-self: center;
 
   // section{
   //   flex: 1;
   // }
 }
+@media screen and (max-width: 1200px){
+  .Container{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px){
+  .Container{
+    // width: 100%!important;
+  }
+  .Navigation{
+    margin-left: 10px!important;
+    margin-right: 20px!important;
+
+  }
+}
+@media screen and (max-width: 900px){
+  .Slide{
+    p{
+      width: 300px!important;
+    }
+  }
+
+}
+@media screen and (max-width: 750px){
+  .Navigation-container{
+    display: none!important;
+  }
+  .Slide{
+    p{
+      width: 400px!important;
+    }
+  }
+}
+
 .Navigation-container{
-  // background-color: red;
-  flex:2;
+  flex:1;
   display: flex;
-  justify-content: flex-start;
-  // align-items: center;
+  // justify-content: flex-start;
+  justify-content: center;
   padding-top: 200px;
   .Navigation{
     text-align: right;
     width: 350px;
-    // padding-top: 200px;
-    // padding-left: 10%;
+    // pmdding-left: 50px;
+    margin-left: 100px;
+    margin-right: 80px;
     .title{
       opacity: .5;
       font-size: 16px;
@@ -89,13 +128,8 @@ a:hover{
       margin-bottom: 10px;
       cursor: pointer;
       .transition;
-      // span{
         opacity: .5;
-        // .transition;
-      // }
-      // span:hover{
-      //   opacity: .8;
-      // // }
+
     }
     .nav:hover{
       opacity: .7;
@@ -127,12 +161,12 @@ a:hover{
 
 }
 .Content{
-  flex:3;
+  flex:1;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;;
 
 }
 .content-parent{
@@ -168,7 +202,10 @@ a:hover{
   overflow: hidden;
 }
 .Slide0{
+  justify-content: flex-start;
+  padding-top: 200px;
   img{
+    margin-top: 10px;
     width: 300px;
     margin-right: 40px;
   }
@@ -206,9 +243,10 @@ a:hover{
     height: 250px;
     overflow: hidden;
     margin-top: 30px;
-    border-radius: 5px;
     img{
       width: 400px;
+      border-radius: 5px;
+
     }
   }
 
