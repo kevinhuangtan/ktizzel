@@ -43810,6 +43810,7 @@ var Slide4 = React.createClass({displayName: "Slide4",
       return (
         React.createElement("div", {key: 4, className: "Music Slide"}, 
           React.createElement("div", {className: "content-parent"}, 
+            React.createElement("div", {className: "content-child"}, 
             React.createElement("p", null, "keys. drums. guitar. bass. ableton. logic. vocals. rap. asian soul."), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839129&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"}), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839352&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"}), 
@@ -43822,6 +43823,7 @@ var Slide4 = React.createClass({displayName: "Slide4",
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197024405&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"}), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196895658&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"}), 
             React.createElement("iframe", {width: "100%", height: "200", scrolling: "no", frameBorder: "no", src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191140081&color=ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"})
+            )
           )
         )
       )
@@ -44003,11 +44005,13 @@ ReactDOM.render(
   React.createElement("div", null, 
     React.createElement(Container, null), 
     React.createElement("div", {className: "footer"}, 
-      React.createElement("p", null, "© Kevin Tan, 1993- future"), 
+      React.createElement("p", {className: "right future"}, "© Kevin Tan, 1993-future"), 
       React.createElement("p", {className: "right"}, 
-        "kevin@ktizzel.com", 
-  			React.createElement("a", {id: "resume", target: "_blank", href: "/resume"}, "resume")
-			)
+        React.createElement("a", {id: "resume", target: "_blank", href: "mailto:kevin@ktizzel.com"}, "Email")
+			), 
+      React.createElement("p", {className: "right"}, 
+        React.createElement("a", {id: "resume", target: "_blank", href: "/resume"}, "CV")
+      )
     )
   ),
   document.getElementById('root')

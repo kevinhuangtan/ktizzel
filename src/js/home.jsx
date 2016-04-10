@@ -51,6 +51,7 @@ var Slide4 = React.createClass({
       return (
         <div key={4} className="Music Slide">
           <div className="content-parent">
+            <div className="content-child">
             <p>keys. drums. guitar. bass. ableton. logic. vocals. rap. asian soul.</p>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839129&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237839352&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
@@ -63,6 +64,7 @@ var Slide4 = React.createClass({
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197024405&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196895658&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
             <iframe width="100%" height="200" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191140081&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </div>
           </div>
         </div>
       )
@@ -244,11 +246,13 @@ ReactDOM.render(
   <div>
     <Container />
     <div className="footer">
-      <p>© Kevin Tan, 1993- future</p>
+      <p className="right future">© Kevin Tan, 1993-future</p>
       <p className="right">
-        kevin@ktizzel.com
-  			<a id="resume" target="_blank" href="/resume">resume</a>
+        <a id="resume" target="_blank" href="mailto:kevin@ktizzel.com">Email</a>
 			</p>
+      <p className="right">
+        <a id="resume" target="_blank" href="/resume">CV</a>
+      </p>
     </div>
   </div>,
   document.getElementById('root')
