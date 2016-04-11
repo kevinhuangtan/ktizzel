@@ -205,7 +205,6 @@ var Navigation = React.createClass({
         <section className="Navigation-container">
           <div className="Navigation">
             <p className="title" style={styles.slide0} onClick={()=>this.props._setSlide(0)}>I strive to make products that add to <span className="good-life">the good life</span></p>
-            <p className="nav nav1" style={styles.slide1} ><span onClick={()=>this.props._setSlide(1)}>founder of theo.clothing</span></p>
             <p className="nav nav2" style={styles.slide2}><span  onClick={()=>this.props._setSlide(2)}>web and iOS developer</span></p>
             <p className="nav nav3" style={styles.slide3}><span onClick={()=>this.props._setSlide(3)}>physics major at Yale</span></p>
             <p className="nav nav4" style={styles.slide4}><span onClick={()=>this.props._setSlide(4)}>music production</span></p>
@@ -219,6 +218,8 @@ var Navigation = React.createClass({
       )
   }
 })
+// <p className="nav nav1" style={styles.slide1} ><span onClick={()=>this.props._setSlide(1)}>founder of theo.clothing</span></p>
+
 var Container = React.createClass({
   getInitialState: function(){
     return{

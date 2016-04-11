@@ -43964,7 +43964,6 @@ var Navigation = React.createClass({displayName: "Navigation",
         React.createElement("section", {className: "Navigation-container"}, 
           React.createElement("div", {className: "Navigation"}, 
             React.createElement("p", {className: "title", style: styles.slide0, onClick: function(){return this.props._setSlide(0);}.bind(this)}, "I strive to make products that add to ", React.createElement("span", {className: "good-life"}, "the good life")), 
-            React.createElement("p", {className: "nav nav1", style: styles.slide1}, React.createElement("span", {onClick: function(){return this.props._setSlide(1);}.bind(this)}, "founder of theo.clothing")), 
             React.createElement("p", {className: "nav nav2", style: styles.slide2}, React.createElement("span", {onClick: function(){return this.props._setSlide(2);}.bind(this)}, "web and iOS developer")), 
             React.createElement("p", {className: "nav nav3", style: styles.slide3}, React.createElement("span", {onClick: function(){return this.props._setSlide(3);}.bind(this)}, "physics major at Yale")), 
             React.createElement("p", {className: "nav nav4", style: styles.slide4}, React.createElement("span", {onClick: function(){return this.props._setSlide(4);}.bind(this)}, "music production")), 
@@ -43978,6 +43977,8 @@ var Navigation = React.createClass({displayName: "Navigation",
       )
   }
 })
+// <p className="nav nav1" style={styles.slide1} ><span onClick={()=>this.props._setSlide(1)}>founder of theo.clothing</span></p>
+
 var Container = React.createClass({displayName: "Container",
   getInitialState: function(){
     return{
