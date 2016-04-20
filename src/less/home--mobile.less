@@ -3,27 +3,64 @@
   .Container{
     flex-direction: column-reverse;
   }
+  .Content{
+    width: 100%!important;
+    padding-left: 0!important;
+    // justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px!important;
+  }
   .Navigation-container{
+    padding:0!important;
     padding-top: 10px;
     flex: none;
     box-shadow: 1px 1px 1px rgba(0,0,0,.1);
     padding-bottom: 10px;
     display: flex!important;
+    background-color: white;
+    width: 100%!important;
+
   }
   .Navigation{
     text-align: left!important;
     width: 100%!important;
-    padding-left: 20px;
-    padding-right: 10px;
+    // padding-left: 20px;
+    margin:0!important;
+    display: flex;
+    flex-direction: row;
 
+
+    // padding-right: 10px;
+    .nav{
+      display: none;
+      flex: 5;
+      text-align: center;
+      margin: 0!important;
+      line-height: 30px;
+    }
+    .glyphicon{
+      display: block!important;
+      flex:1;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+    }
     .title{
+      display: none;
       text-align: left;
       margin-top: 20px!important;
       margin-bottom: 20px!important;
       // margin-left: 30px;
+      margin:0!important;
+      width: 100%!important;
       // text-transform: uppercase;
-      letter-spacing: 0!important;
+      letter-spacing: 0px!important;
       text-decoration: none;
+      flex: 5;
+      .good-life{
+        letter-spacing: 0!important;
+      }
+      font-size: 12px!important;
     }
     p{
       margin-right: 10px;
@@ -33,23 +70,35 @@
     }
   }
   .Slide{
+    width: auto!important;
+    padding: 10px;
+    position: relative;
+    // top: 100px;
+    // justify-content: center!important;
     .content-parent{
       padding-top: 20px;
     }
     p{
-      width: 90%!important;
-      font-size: 14px;
+      // width: 90%!important;
+      width: 100%!important;
+      font-size: 12px;
     }
   }
   .Slide0{
-    padding-top: 0!important;
+    // padding-top: 0!important;
+    padding-top: 100px!important;
     justify-content: center;
+    display: block;
     img{
-      margin: 0;
+      margin: 0 auto;
+      margin-right: auto!important;
       width: 65%;
+      height: auto;
+      display: block;
     }
   }
   .Theo{
+    padding-top: 0;
     .content-parent{
       display: block;
     }
@@ -62,15 +111,25 @@
     }
 
   }
+  .Developer{
+    padding-top: 100px!important;
+  }
   .YalePhysics{
+    padding-top: 0;
     .content-parent{
       display: block!important;
     }
+    .img-container{
+      width: 100%;
+    }
     img{
-      width: 80%!important;
+      width: 100%!important;
     }
   }
   .footer{
+    background-color: white;
+    height: 40px;
+    padding-top: 5px;
     // p{
     //   font-size: 12px;
     // }

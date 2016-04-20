@@ -43957,12 +43957,19 @@ var Navigation = React.createClass({displayName: "Navigation",
         styles[slide].opacity = "1";
         if(this.props.slide!=0){
           styles[slide].color = this.state.slideColors[this.props.slide-1];
+          styles[slide].display = "block";
+        }
+        else{
+          styles.slide0.display = "block";
 
         }
       }
       return (
         React.createElement("section", {className: "Navigation-container"}, 
+
           React.createElement("div", {className: "Navigation"}, 
+            React.createElement("span", {className: "glyphicon glyphicon-chevron-left", onClick: function(){return this.props._setSlide(this.props.slide - 1);}.bind(this)}), 
+
             React.createElement("p", {className: "title", style: styles.slide0, onClick: function(){return this.props._setSlide(0);}.bind(this)}, "I strive to make products that add to ", React.createElement("span", {className: "good-life"}, "the good life")), 
             React.createElement("p", {className: "nav nav1", style: styles.slide1}, React.createElement("span", {onClick: function(){return this.props._setSlide(1);}.bind(this)}, "founder of theo.clothing")), 
 
@@ -43972,8 +43979,8 @@ var Navigation = React.createClass({displayName: "Navigation",
             React.createElement("p", {className: "nav nav5", style: styles.slide5}, React.createElement("span", {onClick: function(){return this.props._setSlide(5);}.bind(this)}, "photography")), 
             React.createElement("p", {className: "nav nav6", style: styles.slide6}, React.createElement("span", {onClick: function(){return this.props._setSlide(6);}.bind(this)}, "influences")), 
             React.createElement("p", {className: "nav nav7", style: styles.slide7}, React.createElement("span", {onClick: function(){return this.props._setSlide(7);}.bind(this)}, "projects")), 
-            React.createElement("p", {className: "nav nav8", style: styles.slide8}, React.createElement("span", {onClick: function(){return this.props._setSlide(8);}.bind(this)}, "blog"))
-
+            React.createElement("p", {className: "nav nav8", style: styles.slide8}, React.createElement("span", {onClick: function(){return this.props._setSlide(8);}.bind(this)}, "blog")), 
+            React.createElement("span", {className: "glyphicon glyphicon-chevron-right", onClick: function(){return this.props._setSlide(this.props.slide + 1);}.bind(this)})
           )
         )
       )
@@ -43988,7 +43995,15 @@ var Container = React.createClass({displayName: "Container",
     }
   },
   _setSlide: function( slide ){
-    this.setState({ slide : slide})
+    if(slide == -1){
+      this.setState({ slide : 8})
+    }
+    else if(slide == 8){
+      this.setState({ slide : 0})
+    }
+    else{
+      this.setState({ slide : slide})
+    }
   },
   render: function(){
     return (

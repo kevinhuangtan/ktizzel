@@ -198,12 +198,19 @@ var Navigation = React.createClass({
         styles[slide].opacity = "1";
         if(this.props.slide!=0){
           styles[slide].color = this.state.slideColors[this.props.slide-1];
+          styles[slide].display = "block";
+        }
+        else{
+          styles.slide0.display = "block";
 
         }
       }
       return (
         <section className="Navigation-container">
+
           <div className="Navigation">
+            <span className="glyphicon glyphicon-chevron-left" onClick={()=>this.props._setSlide(this.props.slide - 1)}/>
+
             <p className="title" style={styles.slide0} onClick={()=>this.props._setSlide(0)}>I strive to make products that add to <span className="good-life">the good life</span></p>
             <p className="nav nav1" style={styles.slide1} ><span onClick={()=>this.props._setSlide(1)}>founder of theo.clothing</span></p>
 
@@ -214,7 +221,7 @@ var Navigation = React.createClass({
             <p className="nav nav6" style={styles.slide6}><span onClick={()=>this.props._setSlide(6)}>influences</span></p>
             <p className="nav nav7" style={styles.slide7}><span onClick={()=>this.props._setSlide(7)}>projects</span></p>
             <p className="nav nav8" style={styles.slide8}><span onClick={()=>this.props._setSlide(8)}>blog</span></p>
-
+            <span className="glyphicon glyphicon-chevron-right" onClick={()=>this.props._setSlide(this.props.slide + 1)}/>
           </div>
         </section>
       )
@@ -229,7 +236,15 @@ var Container = React.createClass({
     }
   },
   _setSlide: function( slide ){
-    this.setState({ slide : slide})
+    if(slide == -1){
+      this.setState({ slide : 8})
+    }
+    else if(slide == 8){
+      this.setState({ slide : 0})
+    }
+    else{
+      this.setState({ slide : slide})
+    }
   },
   render: function(){
     return (
